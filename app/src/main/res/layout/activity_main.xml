@@ -1,69 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgpqst"
+    android:foregroundTint="#C31B1B"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
         android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="109dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="-10dp"
+        android:background="@drawable/nake"
+        app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/bggreen"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="serif"
+        android:hint="PQST"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <ImageView
-            android:layout_width="315dp"
-            android:layout_height="165dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/logoo" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="75dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:layout_width="315dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="15"
-            android:hint="Tên đăng nhập"
-            android:textSize="20dp" />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-365dp"
+        android:layout_marginBottom="-85dp"
+        android:backgroundTint="#040303"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
+        app:layout_constraintEnd_toStartOf="@+id/imageFilterView" />
 
-        <EditText
-            android:layout_width="315dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="15"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="-7dp"
+        android:layout_marginBottom="-30dp"
+        android:text="Ở đây chúng tui Kó App lực"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="20dp"
-            android:text="Quên mật khẩu?"
-            android:textColor="#000"
-            android:textSize="15dp" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-365dp"
+        android:layout_marginBottom="-85dp"
+        android:backgroundTint="#090909"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
+        app:layout_constraintStart_toEndOf="@+id/imageFilterView" />
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="#8c9e5e"
-            android:text="Đăng Nhập"
-            android:textColor="#FFF"
-            android:textSize="16dp"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="10dp"
+        android:text=" @phuquocsinhtamthaotien"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Đăng Ký"
-            android:textColor="#FFF"
-            android:background="#8c9e5e"
-            android:textStyle="bold"
-            android:textSize="16dp"/>
-    </LinearLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
