@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <string name="app_name">Bottom Navigation</string>
+        <string name="title_shop">Shop</string>
+        <string name="title_gifts">Gifts</string>
+        <string name="title_cart">Cart</string>
+        <string name="title_profile">Profile</string>
+    </resources>
+</selector>

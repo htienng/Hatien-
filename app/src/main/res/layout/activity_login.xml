@@ -10,26 +10,28 @@
     <EditText
         android:id="@+id/username"
         android:layout_width="315dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="43dp"
         android:ems="15"
-        android:hint="User name"
+        android:hint="  User name"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:background="@drawable/borderlayout"/>
 
     <EditText
         android:id="@+id/inputpass"
         android:layout_width="315dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="37dp"
         android:ems="15"
-        android:hint="Password"
+        android:hint="  Password"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:background="@drawable/borderlayout"/>
 
     <Button
         android:id="@+id/btn_login"
@@ -82,6 +84,8 @@
         android:background="@drawable/arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

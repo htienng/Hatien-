@@ -39,7 +39,7 @@ public class ActivityLogin extends AppCompatActivity {
             public void onClick(View view) {
                 String LoginUsername = String.valueOf(username.getText());
                 String Password = String.valueOf(password.getText());
-                Intent intent=new Intent(view.getContext(),Bluetooth.class);
+                Intent intent=new Intent(view.getContext(),MainAppActivity.class);
                 startActivity(intent);
             }
         });
